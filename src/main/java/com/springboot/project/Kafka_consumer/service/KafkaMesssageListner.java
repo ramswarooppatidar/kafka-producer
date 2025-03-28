@@ -20,19 +20,19 @@ public class KafkaMesssageListner {
 		logger.info("consumeObject message : {}",message);
 	}
 	
-//	@KafkaListener(topics="demo-topic-1", groupId = "jt-group-2")
-//	public void consume1(String message) {
-//		logger.info("consume1 message : {}"+message);
-//	}
-//	
-//	@KafkaListener(topics="demo-topic-1", groupId = "jt-group-2")
-//	public void consume2(String message) {
-//		logger.info("consume2 message : {}"+message);
-//	}
-//	@KafkaListener(topics="demo-topic-1", groupId = "jt-group-2")
-//	public void consume3(String message) {
-//		logger.info("consume3 message : {}"+message);
-//	}
+	@KafkaListener(topics="demo-topic-1", groupId = "jt-group-2")
+	public void consume1(String message) {
+		logger.info("consume1 message : {}"+message);
+	}
+	
+	@KafkaListener(topics="demo-topic-1", groupId = "jt-group-2")
+	public void consume2(String message) {
+		logger.info("consume2 message : {}"+message);
+	}
+	@KafkaListener(topics="demo-topic-1", groupId = "jt-group-2")
+	public void consume3(String message) {
+		logger.info("consume3 message : {}"+message);
+	}
 
 	
 	
